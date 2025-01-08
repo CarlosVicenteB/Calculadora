@@ -7,14 +7,14 @@ const botones  = [
   "0", ".", "=", "/"
 ]
 
+// agregar un regex de ser necesario
 const calculo = (op) => {
-  console.log(op)
+  return (eval(op)).toFixed(2)
 }
 
 
 // Manejamos las operaciones realizadas por los botones
 let operacion = '0'
-// agregar un regex 
 let bandera = true
 
 const acciones = ({ target }) => {
@@ -24,7 +24,7 @@ const acciones = ({ target }) => {
 
   switch (textContent) {
     case '=':
-      calculo(operacion)
+      operacion = calculo(operacion)
       break
     case 'C':
       if (operacion.length > 1) operacion = operacion.slice(0, -1)
@@ -41,8 +41,8 @@ const acciones = ({ target }) => {
       operacion = '0'
       break
     default:
+      if (isNaN(Number(textContent)) && isNaN(Number(operacion[operacion.length - 1]))) break
       const nuevaOperacion = operacion + textContent
-
       if ( operacion === '0' && textContent !== '.') {
         operacion = textContent
       } else {
