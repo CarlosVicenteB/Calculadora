@@ -41,7 +41,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.5rem;
+  padding: 0.8rem;
   height: 78vh;
 }
 
@@ -50,22 +50,28 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 2.6rem 1.4rem;
   border: 0.1rem solid gray;
   border-radius: 0.8rem;
+  width: clamp(380px, 50vh, 460px);
 }
 
 .contenedor {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 0.8rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.2vh;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .valor-pantalla {
   grid-column: 1 / 5;
-  text-align: end;
+  display: flex;
+  align-items: center;
+  justify-content: end;
   min-height: 10vh;
-  font-size: 6vh;
+  font-size: 5.8vh;
   padding: 0.5rem 1rem;
   border: 0.1rem solid gray;
   border-radius: 0.8rem;
@@ -74,7 +80,7 @@ main {
 
 .botones {
   padding: 0.5rem;
-  font-size: 4vh;
+  font-size: 3.8vh;
   border: 0.1rem solid gray;
   border-radius: 0.8rem;
 }
