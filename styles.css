@@ -64,6 +64,7 @@ main {
 .valor-pantalla {
   grid-column: 1 / 5;
   text-align: end;
+  min-height: 10vh;
   font-size: 6vh;
   padding: 0.5rem 1rem;
   border: 0.1rem solid gray;
