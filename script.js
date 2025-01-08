@@ -1,6 +1,6 @@
 // Datos para el contenedor de botones
 const botones  = [
-  "C", "AC", "OF", "ON",
+  "C", "AC", "OFF", "ON",
   "7", "8", "9", "+",
   "4", "5", "6", "-",
   "1", "2", "3", "*",
@@ -62,10 +62,10 @@ const acciones = ({ target }) => {
 const contenedorBotones = document.querySelector('.contenedor')
 
 // Introducimos el arreglo al contenedor de botones
-botones.forEach( (value, id, _) => {
+botones.forEach( (value) => {
   const boton = document.createElement('button')
   boton.textContent = value
-  boton.classList = `botones ${id}`
+  boton.classList = `botones ${value}`
   boton.addEventListener('click', acciones)
   contenedorBotones.appendChild(boton)
 })
