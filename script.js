@@ -32,7 +32,7 @@ const acciones = ({ target }) => {
     case 'AC':
       operacion = '0'
       break
-    case 'OF':
+    case 'OFF':
       bandera = false
       operacion = ''
       break
