@@ -86,7 +86,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: end;
-  min-height: 10vh;
+  min-height: 12vh;
   font-size: 5.8vh;
   padding: 0.5rem 1rem;
   border: 0.1rem solid #616161;
