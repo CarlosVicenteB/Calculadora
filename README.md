@@ -7,5 +7,5 @@ Una calculadora web sencilla desarrollada con **HTML**, **CSS** y **JavaScript**
 
 Las siguientes imágenes utilizadas en este proyecto fueron obtenidas de [Flaticon](https://www.flaticon.com):
 
-- [Íconos de calculadora](https://www.flaticon.com/free-icons/calculator) creados por [Pixel perfect](https://www.flaticon.com/authors/pixel-perfect).
-- [Íconos de GitHub](https://www.flaticon.com/free-icons/github) creados por [Pixel perfect](https://www.flaticon.com/authors/pixel-perfect).
+- [Ícono de calculadora](https://www.flaticon.com/free-icons/calculator) creados por [Pixel perfect](https://www.flaticon.com/authors/pixel-perfect).
+- [Ícono de GitHub](https://www.flaticon.com/free-icons/github) creados por [Pixel perfect](https://www.flaticon.com/authors/pixel-perfect).
