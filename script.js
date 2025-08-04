@@ -27,6 +27,7 @@ const acciones = ({ target }) => {
       operacion = calculo(operacion)
       break
     case 'C':
+      if (operacion.length == 1) operacion = '0'
       if (operacion.length > 1) operacion = operacion.slice(0, -1)
       break 
     case 'AC':
